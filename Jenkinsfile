@@ -9,6 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
+                sleep(time: 30, unit: 'SECONDS')
             }
         }
         stage('Deploy') {
